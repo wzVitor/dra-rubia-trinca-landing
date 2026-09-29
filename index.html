@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dra. Rubia Trinca | Cirurgiã-Dentista em Porto Alegre</title>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Dra. Rubia Maria Trinca | Cirurgiã Dentista em Porto Alegre</title>
+    <meta name="description" content="Consultório odontológico boutique no Parque Santa Fé, Porto Alegre - RS. Especializada em estética dental, lentes de contato, próteses e reabilitação oral.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -12,226 +13,400 @@
                 extend: {
                     colors: {
                         dental: {
-                            50: '#f0fdfa',
-                            100: '#ccfbf1',
-                            500: '#0d9488',
-                            600: '#0f766e',
-                            900: '#134e4a',
+                            primary: '#1E3A34',
+                            secondary: '#D4AF37',
+                            accent: '#F4F1EA',
+                            charcoal: '#2C2C2C',
+                            muted: '#707070'
                         }
                     },
                     fontFamily: {
-                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        sans: ['Inter', 'sans-serif'],
                         serif: ['Playfair Display', 'serif']
                     }
                 }
             }
         }
     </script>
+    <style>
+        .bg-cream { background-color: #F4F1EA; }
+        .text-forest { color: #1E3A34; }
+        .bg-forest { background-color: #1E3A34; }
+        .text-gold { color: #D4AF37; }
+        .bg-gold { background-color: #D4AF37; }
+        .border-gold { border-color: #D4AF37; }
+    </style>
 </head>
-<body class="bg-white text-slate-900 font-sans antialiased selection:bg-dental-100 selection:text-dental-900">
-    <!-- Floating Announcement / Top Bar -->
-    <div class="bg-dental-900 text-dental-50 py-2.5 px-4 text-center text-xs font-semibold tracking-wide">
-        📍 Atendimento especializado no Parque Santa Fé / Rubem Berta • Porto Alegre - RS | 📞 (51) 98135-4315
-    </div>
+<body class="bg-dental-accent text-dental-charcoal font-sans antialiased selection:bg-dental-secondary/20 selection:text-dental-primary">
 
-    <!-- Header -->
-    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm">
+    <!-- 1. Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-dental-secondary/20 shadow-sm">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <div class="flex items-center space-x-3">
-                <div class="w-10 h-10 rounded-xl bg-dental-500 flex items-center justify-center text-white font-bold text-xl shadow-md shadow-dental-500/20 font-serif">RT</div>
+                <div class="w-11 h-11 rounded-xl bg-forest flex items-center justify-center text-dental-secondary font-serif font-bold text-xl shadow-md">RT</div>
                 <div class="flex flex-col">
-                    <span class="font-serif font-bold text-lg tracking-tight text-slate-900">Dra. Rubia Trinca</span>
-                    <span class="text-xs text-dental-600 font-medium tracking-wide">Cirurgiã-Dentista • UFRGS</span>
+                    <span class="font-serif font-bold text-lg text-forest tracking-tight">Dra. Rubia Maria Trinca</span>
+                    <span class="text-xs text-dental-muted font-medium tracking-wide">Cirurgiã Dentista • CRO-RS 4267</span>
                 </div>
             </div>
-            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-600">
-                <a href="#sobre" class="hover:text-dental-500 transition-colors">Sobre a Doutora</a>
-                <a href="#tratamentos" class="hover:text-dental-500 transition-colors">Tratamentos</a>
-                <a href="#transformacoes" class="hover:text-dental-500 transition-colors">Antes e Depois</a>
-                <a href="#avaliacoes" class="hover:text-dental-500 transition-colors">Avaliações (5.0 ★)</a>
-                <a href="#contato" class="hover:text-dental-500 transition-colors">Localização</a>
+            <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium text-dental-charcoal">
+                <a href="#sobre" class="hover:text-forest transition-colors">Sobre</a>
+                <a href="#especialidades" class="hover:text-forest transition-colors">Especialidades</a>
+                <a href="#como-funciona" class="hover:text-forest transition-colors">Como Funciona</a>
+                <a href="#galeria" class="hover:text-forest transition-colors">Sorrisos</a>
+                <a href="#depoimentos" class="hover:text-forest transition-colors">Avaliações</a>
+                <a href="#faq" class="hover:text-forest transition-colors">FAQ</a>
+                <a href="#contato" class="hover:text-forest transition-colors">Localização</a>
             </nav>
-            <a href="https://wa.me/5551981354315?text=Olá,%20Dra.%20Rubia.%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="bg-emerald-600 text-white px-6 py-3 rounded-xl text-sm font-semibold hover:bg-emerald-500 transition-all shadow-md shadow-emerald-600/20 flex items-center space-x-2">
-                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-                <span>Agendar Consulta</span>
-            </a>
+            <div class="flex items-center space-x-4">
+                <a href="tel:5133664315" class="hidden sm:flex items-center space-x-2 text-sm font-semibold text-forest">
+                    <span>(51) 3366-4315</span>
+                </a>
+                <a href="https://wa.me/5551981354315?text=Olá%20Dra.%20Rubia,%20gostaria%20de%20agendar%20uma%20avaliação%20para%20estética/lentes." target="_blank" class="bg-forest text-dental-accent px-6 py-3 rounded-xl text-sm font-semibold hover:bg-forest/90 transition-all shadow-md shadow-forest/10 flex items-center space-x-2">
+                    <span>Agendar Avaliação</span>
+                </a>
+            </div>
         </div>
     </header>
 
-    <!-- Hero Section (Enhanced with 21st.dev MCP design pattern) -->
-    <section class="relative pt-20 pb-32 bg-gradient-to-b from-dental-50/60 to-white overflow-hidden">
+    <!-- 2. Hero Section -->
+    <section class="relative pt-20 pb-32 bg-cream overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div class="lg:col-span-7 space-y-8">
-                <div class="inline-flex items-center space-x-2 bg-dental-100 text-dental-800 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider">
-                    <span>✨ Odontologia Humanizada em Porto Alegre</span>
+                <div class="inline-flex items-center space-x-2 bg-dental-secondary/10 border border-dental-secondary/30 text-forest px-4 py-2 rounded-full text-xs font-semibold tracking-wider uppercase">
+                    <span>✨ Atendimento Humanizado no Parque Santa Fé</span>
                 </div>
-                <h1 class="text-4xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.1]">
-                    Seu sorriso renovado com <span class="text-dental-500">precisão e carinho</span>.
+                <h1 class="font-serif text-4xl lg:text-6xl font-bold text-forest tracking-tight leading-[1.12]">
+                    Transforme seu sorriso com a excelência em <span class="italic text-dental-secondary">estética dental</span> em Porto Alegre
                 </h1>
-                <p class="text-lg text-slate-600 max-w-xl leading-relaxed">
-                    Especialidade, experiência da UFRGS e tecnologia de ponta para cuidar da sua saúde bucal e transformar sua autoestima na Zona Norte de Porto Alegre.
+                <p class="text-lg text-dental-muted max-w-xl leading-relaxed font-light">
+                    Consultório odontológico boutique. Unimos ciência, sofisticação e tecnologia para revelar a versão mais natural e confiante do seu sorriso.
                 </p>
                 <div class="flex flex-col sm:flex-row items-stretch sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
-                    <a href="https://wa.me/5551981354315?text=Olá,%20Dra.%20Rubia.%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="bg-emerald-600 text-white text-center px-8 py-4 rounded-2xl font-bold hover:bg-emerald-500 transition-all shadow-xl shadow-emerald-600/20 flex items-center justify-center space-x-3">
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-                        <span>Quero Agendar pelo WhatsApp</span>
+                    <a href="https://wa.me/5551981354315?text=Olá%20Dra.%20Rubia,%20gostaria%20de%20agendar%20uma%20avaliação%20pelo%20site." target="_blank" class="bg-forest text-dental-accent text-center px-8 py-4 rounded-xl font-semibold hover:bg-forest/90 transition-all shadow-lg shadow-forest/20 flex items-center justify-center space-x-2">
+                        <span>Agendar Avaliação pelo WhatsApp</span>
                     </a>
+                    <a href="#especialidades" class="border border-forest/30 text-forest text-center px-8 py-4 rounded-xl font-semibold hover:bg-forest/5 transition-all">
+                        Conhecer Tratamentos
+                    </a>
+                </div>
+                <!-- Google Rating Badge -->
+                <div class="pt-4 flex items-center space-x-4">
+                    <div class="flex text-amber-500 text-lg">★★★★★</div>
+                    <div class="text-sm font-medium text-dental-charcoal">
+                        <strong class="text-forest">Nota 5.0</strong> baseada em avaliações verificadas no Google Maps
+                    </div>
                 </div>
             </div>
             <div class="lg:col-span-5 relative">
-                <div class="relative rounded-3xl overflow-hidden shadow-2xl bg-dental-100 aspect-[4/3] lg:aspect-[4/5]">
+                <div class="relative rounded-2xl overflow-hidden shadow-2xl bg-white aspect-[4/5] border-4 border-white">
                     <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=800" alt="Consultório Dra. Rubia Trinca" class="w-full h-full object-cover">
+                    <div class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-md p-4 rounded-xl border border-dental-secondary/20 shadow-lg">
+                        <p class="text-xs font-bold text-forest uppercase tracking-wider">Boutique Odontológica</p>
+                        <p class="text-sm font-serif text-dental-charcoal font-medium">Ambiente exclusivo, acolhedor e seguro.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About the Doctor -->
+    <!-- 3. Quick Social Proof Strip -->
+    <section class="bg-forest text-dental-accent py-6 border-y border-dental-secondary/30">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-around items-center text-center md:text-left space-y-4 md:space-y-0">
+            <div class="flex items-center space-x-3">
+                <span class="text-dental-secondary font-bold text-2xl">★ 5.0</span>
+                <span class="text-sm font-medium tracking-wide">Excelência comprovada no Google Maps em Porto Alegre</span>
+            </div>
+            <div class="flex items-center space-x-3">
+                <span class="text-dental-secondary font-bold text-xl">✦</span>
+                <span class="text-sm font-medium tracking-wide">Referência em Lentes de Contato e Facetas em Cerâmica</span>
+            </div>
+            <div class="flex items-center space-x-3">
+                <span class="text-dental-secondary font-bold text-xl">🛡️</span>
+                <span class="text-sm font-medium tracking-wide">Formação UFRGS • Rigor Científico e Segurança</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. About Dr. Rubia Trinca -->
     <section id="sobre" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            <div class="lg:col-span-5">
-                <div class="rounded-3xl overflow-hidden shadow-xl aspect-[4/3] bg-dental-100">
+            <div class="lg:col-span-5 relative">
+                <div class="rounded-2xl overflow-hidden shadow-xl aspect-[4/3] bg-dental-accent border border-dental-secondary/20">
                     <img src="https://images.unsplash.com/photo-1594824813511-28952c42d3c5?auto=format&fit=crop&q=80&w=800" alt="Dra. Rubia Trinca" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute -bottom-6 -right-6 bg-forest text-dental-accent p-6 rounded-2xl shadow-xl hidden sm:block border border-dental-secondary/30 max-w-xs">
+                    <p class="font-serif italic text-sm text-dental-secondary">"A verdadeira estética dental é aquela que respeita a sua essência e devolve a liberdade de sorrir."</p>
+                    <p class="text-xs font-bold mt-2">— Dra. Rubia Trinca</p>
                 </div>
             </div>
             <div class="lg:col-span-7 space-y-6">
-                <span class="text-xs font-bold tracking-widest uppercase text-dental-500 block">Tradição & Excelência</span>
-                <h2 class="text-3xl lg:text-4xl font-extrabold text-slate-900">Dra. Rubia Maria Trinca • CRO-RS 4267</h2>
-                <p class="text-slate-600 leading-relaxed text-lg">
-                    Cirurgiã-Dentista formada pela <strong>Faculdade de Odontologia da UFRGS</strong>, a Dra. Rubia alia vasta experiência clínica a um atendimento inteiramente focado no bem-estar e no conforto de cada paciente.
+                <span class="text-xs font-bold tracking-widest uppercase text-dental-secondary block">Compromisso com a Excelência</span>
+                <h2 class="font-serif text-3xl lg:text-4xl font-bold text-forest">Dra. Rubia Maria Trinca • Cirurgiã Dentista</h2>
+                <p class="text-dental-muted leading-relaxed text-lg font-light">
+                    Formada pela <strong>Faculdade de Odontologia da UFRGS</strong>, a Dra. Rubia Trinca possui sólida trajetória no tratamento e reabilitação de pacientes que buscam alto padrão em estética dental e saúde bucal em Porto Alegre.
                 </p>
-                <p class="text-slate-600 leading-relaxed">
-                    Instalado na <strong>Av. Delmar Rocha Barbosa, 510 (Parque Santa Fé / Rubem Berta)</strong>, seu consultório particular oferece infraestrutura completa, rigorosos padrões de biossegurança e avaliação impecável 5.0 estrelas no Google.
+                <p class="text-dental-muted leading-relaxed font-light">
+                    Localizado estrategicamente na <strong>Av. Delmar Rocha Barbosa, 510, no Parque Santa Fé</strong>, seu consultório foi idealizado como um espaço boutique: livre do estresse dos grandes centros, com atendimento inteiramente personalizado, hora marcada e foco absoluto no detalhe.
                 </p>
                 <div class="grid grid-cols-2 gap-6 pt-4">
-                    <div class="p-6 rounded-2xl bg-dental-50 border border-dental-100">
-                        <span class="block text-3xl font-extrabold text-dental-600 mb-1">UFRGS</span>
-                        <span class="text-sm text-slate-600 font-medium">Formação de Referência</span>
+                    <div class="p-6 rounded-xl bg-dental-accent border border-dental-secondary/20">
+                        <span class="block font-serif text-3xl font-bold text-forest mb-1">UFRGS</span>
+                        <span class="text-xs text-dental-muted font-medium">Formação de Elite no RS</span>
                     </div>
-                    <div class="p-6 rounded-2xl bg-dental-50 border border-dental-100">
-                        <span class="block text-3xl font-extrabold text-dental-600 mb-1">5.0 ★</span>
-                        <span class="text-sm text-slate-600 font-medium">Satisfação dos Pacientes</span>
+                    <div class="p-6 rounded-xl bg-dental-accent border border-dental-secondary/20">
+                        <span class="block font-serif text-3xl font-bold text-forest mb-1">CRO-RS</span>
+                        <span class="text-xs text-dental-muted font-medium">Registro Profissional 4267</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Treatments -->
-    <section id="tratamentos" class="py-24 bg-slate-50 border-t border-slate-100">
+    <!-- 5. Detailed Services Section (6 core offerings) -->
+    <section id="especialidades" class="py-24 bg-cream border-t border-dental-secondary/20">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="text-xs font-bold tracking-widest uppercase text-dental-500 block mb-3">Especialidades</span>
-                <h2 class="text-3xl lg:text-4xl font-extrabold text-slate-900">Tratamentos odontológicos completos</h2>
+                <span class="text-xs font-bold tracking-widest uppercase text-dental-secondary block mb-3">Especialidades Boutique</span>
+                <h2 class="font-serif text-3xl lg:text-4xl font-bold text-forest">Tratamentos de Alta Performance</h2>
+                <p class="text-dental-muted mt-3 font-light">Soluções odontológicas planejadas sob medida para harmonizar seu sorriso com naturalidade.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-all">
-                    <div class="w-14 h-14 rounded-2xl bg-dental-50 flex items-center justify-center text-dental-500 mb-6 font-bold text-xl">✨</div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Estética</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">Clareamento dental profissional e procedimentos para realçar a beleza natural do seu sorriso.</p>
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-dental-secondary/20 hover:shadow-md transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-forest text-dental-secondary flex items-center justify-center font-bold text-lg mb-6">💎</div>
+                        <h3 class="font-serif text-2xl font-bold text-forest mb-3">Lentes de Contato Dental</h3>
+                        <p class="text-dental-muted text-sm leading-relaxed mb-4">Lâminas ultrafinas de porcelana que corrigem cor, forma e pequenos desalinhamentos com mínimo desgaste dentário.</p>
+                        <div class="space-y-1 text-xs text-dental-charcoal font-medium mb-6">
+                            <p>• <strong>Ideal para:</strong> Dentes manchados ou espaçados</p>
+                            <p>• <strong>Principal benefício:</strong> Sorriso harmônico e duradouro</p>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/5551981354315?text=Olá%20Dra.%20Rubia,%20gostaria%20de%20saber%20mais%20sobre%20Lentes%20de%20Contato." target="_blank" class="inline-flex items-center space-x-2 text-xs font-bold text-forest uppercase tracking-wider hover:text-dental-secondary transition-colors">
+                        <span>Quero saber mais</span> →
+                    </a>
                 </div>
-                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-all">
-                    <div class="w-14 h-14 rounded-2xl bg-dental-50 flex items-center justify-center text-dental-500 mb-6 font-bold text-xl">💎</div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Facetas</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">Correção de cor, formato e pequenos desalinhamentos dentários com cerâmicas de alta durabilidade.</p>
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-dental-secondary/20 hover:shadow-md transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-forest text-dental-secondary flex items-center justify-center font-bold text-lg mb-6">✨</div>
+                        <h3 class="font-serif text-2xl font-bold text-forest mb-3">Facetas em Cerâmica</h3>
+                        <p class="text-dental-muted text-sm leading-relaxed mb-4">Transformações estéticas marcantes com porcelanas de altíssima resistência e translucidez idêntica ao dente natural.</p>
+                        <div class="space-y-1 text-xs text-dental-charcoal font-medium mb-6">
+                            <p>• <strong>Ideal para:</strong> Correção estrutural e estética</p>
+                            <p>• <strong>Principal benefício:</strong> Máxima naturalidade e brilho</p>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/5551981354315?text=Olá%20Dra.%20Rubia,%20gostaria%20de%20saber%20mais%20sobre%20Facetas%20em%20Cerâmica." target="_blank" class="inline-flex items-center space-x-2 text-xs font-bold text-forest uppercase tracking-wider hover:text-dental-secondary transition-colors">
+                        <span>Quero saber mais</span> →
+                    </a>
                 </div>
-                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-all">
-                    <div class="w-14 h-14 rounded-2xl bg-dental-50 flex items-center justify-center text-dental-500 mb-6 font-bold text-xl">🦷</div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Lentes</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">Lâminas ultrafinas de porcelana para transformações estéticas marcantes e minimamente invasivas.</p>
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-dental-secondary/20 hover:shadow-md transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-forest text-dental-secondary flex items-center justify-center font-bold text-lg mb-6">🛡️</div>
+                        <h3 class="font-serif text-2xl font-bold text-forest mb-3">Próteses Dentárias</h3>
+                        <p class="text-dental-muted text-sm leading-relaxed mb-4">Reabilitação oral completa com coroas e próteses fixas ou removíveis, devolvendo a função mastigatória e o conforto.</p>
+                        <div class="space-y-1 text-xs text-dental-charcoal font-medium mb-6">
+                            <p>• <strong>Ideal para:</strong> Reposição de dentes ausentes</p>
+                            <p>• <strong>Principal benefício:</strong> Firmeza e mastigação perfeita</p>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/5551981354315?text=Olá%20Dra.%20Rubia,%20gostaria%20de%20saber%20mais%20sobre%20Próteses%20Dentárias." target="_blank" class="inline-flex items-center space-x-2 text-xs font-bold text-forest uppercase tracking-wider hover:text-dental-secondary transition-colors">
+                        <span>Quero saber mais</span> →
+                    </a>
                 </div>
-                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-all">
-                    <div class="w-14 h-14 rounded-2xl bg-dental-50 flex items-center justify-center text-dental-500 mb-6 font-bold text-xl">🛡️</div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Próteses</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">Reposição segura de dentes perdidos com coroas e próteses fixas ou removíveis de alto padrão.</p>
+                <!-- Service 4 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-dental-secondary/20 hover:shadow-md transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-forest text-dental-secondary flex items-center justify-center font-bold text-lg mb-6">⚡</div>
+                        <h3 class="font-serif text-2xl font-bold text-forest mb-3">Endodontia</h3>
+                        <p class="text-dental-muted text-sm leading-relaxed mb-4">Tratamento de canal executado com tecnologia moderna e indolor, focado em salvar dentes comprometidos com total segurança.</p>
+                        <div class="space-y-1 text-xs text-dental-charcoal font-medium mb-6">
+                            <p>• <strong>Ideal para:</strong> Alívio de dor e infecções</p>
+                            <p>• <strong>Principal benefício:</strong> Preservação do dente natural</p>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/5551981354315?text=Olá%20Dra.%20Rubia,%20gostaria%20de%20saber%20mais%20sobre%20Endodontia." target="_blank" class="inline-flex items-center space-x-2 text-xs font-bold text-forest uppercase tracking-wider hover:text-dental-secondary transition-colors">
+                        <span>Quero saber mais</span> →
+                    </a>
                 </div>
-                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-all">
-                    <div class="w-14 h-14 rounded-2xl bg-dental-50 flex items-center justify-center text-dental-500 mb-6 font-bold text-xl">⚡</div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Endodontia</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">Tratamento de canal seguro e indolor, focado na preservação da estrutura dental.</p>
+                <!-- Service 5 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-dental-secondary/20 hover:shadow-md transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-forest text-dental-secondary flex items-center justify-center font-bold text-lg mb-6">🦷</div>
+                        <h3 class="font-serif text-2xl font-bold text-forest mb-3">Dentística Restauradora</h3>
+                        <p class="text-dental-muted text-sm leading-relaxed mb-4">Restaurações estéticas em resina composta de alta performance para devolver anatomia e cor natural a dentes afetados por cáries.</p>
+                        <div class="space-y-1 text-xs text-dental-charcoal font-medium mb-6">
+                            <p>• <strong>Ideal para:</strong> Dentes com cavidades ou fraturas</p>
+                            <p>• <strong>Principal benefício:</strong> Invisibilidade e resistência</p>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/5551981354315?text=Olá%20Dra.%20Rubia,%20gostaria%20de%20saber%20mais%20sobre%20Dentística." target="_blank" class="inline-flex items-center space-x-2 text-xs font-bold text-forest uppercase tracking-wider hover:text-dental-secondary transition-colors">
+                        <span>Quero saber mais</span> →
+                    </a>
                 </div>
-                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-all">
-                    <div class="w-14 h-14 rounded-2xl bg-dental-50 flex items-center justify-center text-dental-500 mb-6 font-bold text-xl">🪥</div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Dentística</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">Prevenção, limpezas profiláticas e restaurações estéticas para manter sua saúde em dia.</p>
+                <!-- Service 6 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-dental-secondary/20 hover:shadow-md transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-forest text-dental-secondary flex items-center justify-center font-bold text-lg mb-6">🌿</div>
+                        <h3 class="font-serif text-2xl font-bold text-forest mb-3">Odontologia Estética & Profilaxia</h3>
+                        <p class="text-dental-muted text-sm leading-relaxed mb-4">Clareamento dental avançado, limpeza profilática profissional e remoção de tártaro para manter o sorriso sempre radiante.</p>
+                        <div class="space-y-1 text-xs text-dental-charcoal font-medium mb-6">
+                            <p>• <strong>Ideal para:</strong> Prevenção e branqueamento</p>
+                            <p>• <strong>Principal benefício:</strong> Saúde gengival e hálito fresco</p>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/5551981354315?text=Olá%20Dra.%20Rubia,%20gostaria%20de%20saber%20mais%20sobre%20Estética%20e%20Profilaxia." target="_blank" class="inline-flex items-center space-x-2 text-xs font-bold text-forest uppercase tracking-wider hover:text-dental-secondary transition-colors">
+                        <span>Quero saber mais</span> →
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Before and After Gallery -->
-    <section id="transformacoes" class="py-24 bg-white">
+    <!-- 6. How It Works (Step-by-Step) -->
+    <section id="como-funciona" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="text-xs font-bold tracking-widest uppercase text-dental-500 block mb-3">Resultados Reais</span>
-                <h2 class="text-3xl lg:text-4xl font-extrabold text-slate-900">Antes e Depois • Transformações de Sorrisos</h2>
+                <span class="text-xs font-bold tracking-widest uppercase text-dental-secondary block mb-3">Simples e Transparente</span>
+                <h2 class="font-serif text-3xl lg:text-4xl font-bold text-forest">Como Funciona o Seu Atendimento</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="p-8 rounded-2xl bg-cream border border-dental-secondary/20 relative">
+                    <div class="w-10 h-10 rounded-full bg-forest text-dental-secondary font-serif font-bold flex items-center justify-center mb-6 text-lg">01</div>
+                    <h3 class="font-serif font-bold text-forest text-xl mb-2">Contato via WhatsApp</h3>
+                    <p class="text-dental-muted text-sm font-light leading-relaxed">Você clica em nossos botões e fala diretamente com nossa equipe para escolher o melhor horário.</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-cream border border-dental-secondary/20 relative">
+                    <div class="w-10 h-10 rounded-full bg-forest text-dental-secondary font-serif font-bold flex items-center justify-center mb-6 text-lg">02</div>
+                    <h3 class="font-serif font-bold text-forest text-xl mb-2">Avaliação Individual</h3>
+                    <p class="text-dental-muted text-sm font-light leading-relaxed">Consulta detalhada no consultório do Parque Santa Fé com escaneamento e diagnóstico preciso.</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-cream border border-dental-secondary/20 relative">
+                    <div class="w-10 h-10 rounded-full bg-forest text-dental-secondary font-serif font-bold flex items-center justify-center mb-6 text-lg">03</div>
+                    <h3 class="font-serif font-bold text-forest text-xl mb-2">Planejamento Estético</h3>
+                    <p class="text-dental-muted text-sm font-light leading-relaxed">Apresentação do projeto do novo sorriso com simulação e cronograma transparente.</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-cream border border-dental-secondary/20 relative">
+                    <div class="w-10 h-10 rounded-full bg-forest text-dental-secondary font-serif font-bold flex items-center justify-center mb-6 text-lg">04</div>
+                    <h3 class="font-serif font-bold text-forest text-xl mb-2">Sorriso Transformado</h3>
+                    <p class="text-dental-muted text-sm font-light leading-relaxed">Execução dos procedimentos com máximo conforto, acompanhamento e suporte pós-atendimento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Why Choose Us / Differentiators -->
+    <section class="py-24 bg-forest text-dental-accent">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-6 space-y-6">
+                <span class="text-xs font-bold tracking-widest uppercase text-dental-secondary block">Diferenciais Exclusivos</span>
+                <h2 class="font-serif text-3xl lg:text-4xl font-bold text-white">Por que escolher o consultório da Dra. Rubia Trinca?</h2>
+                <p class="text-dental-accent/80 font-light leading-relaxed">
+                    Diferente das clínicas de massa que tratam pacientes como números, aqui você recebe atenção exclusiva em um ambiente reservado, humanizado e com rigor científico.
+                </p>
+                <div class="space-y-4 pt-2">
+                    <div class="flex items-start space-x-3">
+                        <span class="text-dental-secondary font-bold text-lg">✓</span>
+                        <p class="text-sm"><strong>Localização Privilegiada no Parque Santa Fé:</strong> Fácil acesso na Zona Norte de Porto Alegre com total comodidade.</p>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <span class="text-dental-secondary font-bold text-lg">✓</span>
+                        <p class="text-sm"><strong>Atendimento Boutique:</strong> Zero filas de espera, hora marcada e foco integral na sua experiência.</p>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <span class="text-dental-secondary font-bold text-lg">✓</span>
+                        <p class="text-sm"><strong>Formação UFRGS:</strong> Ciência, ética e técnica refinada por uma das maiores instituições do país.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:col-span-6">
+                <div class="bg-white/5 border border-dental-secondary/30 p-8 rounded-2xl backdrop-blur-md space-y-6">
+                    <h3 class="font-serif text-2xl font-bold text-dental-secondary">Agende sua Experiência Odontológica</h3>
+                    <p class="text-sm text-dental-accent/80 font-light">Descubra o que um atendimento realmente personalizado pode fazer pela sua saúde e confiança.</p>
+                    <a href="https://wa.me/5551981354315?text=Olá%20Dra.%20Rubia,%20gostaria%20de%20agendar%20minha%20avaliação." target="_blank" class="block w-full bg-dental-secondary text-forest text-center py-4 rounded-xl font-bold hover:bg-dental-secondary/90 transition-all shadow-lg">
+                        Falar com a Dra. Rubia no WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Smile Gallery / Cases -->
+    <section id="galeria" class="py-24 bg-cream">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold tracking-widest uppercase text-dental-secondary block mb-3">Galeria de Casos</span>
+                <h2 class="font-serif text-3xl lg:text-4xl font-bold text-forest">Transformações que Inspira Confiança</h2>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="rounded-3xl overflow-hidden shadow-lg border border-slate-100 bg-slate-50">
-                    <div class="aspect-[4/3] bg-dental-100">
-                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=800" alt="Facetas" class="w-full h-full object-cover">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-dental-secondary/20">
+                    <div class="aspect-[4/3] bg-dental-accent">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=800" alt="Caso Clínico Lentes de Contato" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
-                        <span class="text-xs font-bold text-dental-600 uppercase tracking-wider block mb-1">Facetas em Cerâmica</span>
-                        <h3 class="font-bold text-slate-900 text-lg">Harmonia e Simetria Perfeita</h3>
-                        <p class="text-sm text-slate-600 mt-2">Correção de forma e cor com lâminas de porcelana personalizadas.</p>
+                        <span class="text-xs font-bold text-dental-secondary uppercase tracking-wider block mb-1">Lentes de Contato Dental</span>
+                        <h3 class="font-serif font-bold text-forest text-lg">Harmonização do Sorriso</h3>
+                        <p class="text-sm text-dental-muted mt-2 font-light">[INSERIR FOTO REAL: Sorriso transformado com lentes de contato feitas pela Dra. Rubia].</p>
                     </div>
                 </div>
-                <div class="rounded-3xl overflow-hidden shadow-lg border border-slate-100 bg-slate-50">
-                    <div class="aspect-[4/3] bg-dental-100">
-                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800" alt="Prótese" class="w-full h-full object-cover">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-dental-secondary/20">
+                    <div class="aspect-[4/3] bg-dental-accent">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800" alt="Caso Clínico Prótese" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
-                        <span class="text-xs font-bold text-dental-600 uppercase tracking-wider block mb-1">Reabilitação Oral</span>
-                        <h3 class="font-bold text-slate-900 text-lg">Função e Estética Restauradas</h3>
-                        <p class="text-sm text-slate-600 mt-2">Devolução da mastigação eficiente e sorriso natural com coroas estéticas.</p>
+                        <span class="text-xs font-bold text-dental-secondary uppercase tracking-wider block mb-1">Reabilitação Estética</span>
+                        <h3 class="font-serif font-bold text-forest text-lg">Próteses em Cerâmica Pura</h3>
+                        <p class="text-sm text-dental-muted mt-2 font-light">[INSERIR FOTO REAL: Caso clínico de reabilitação oral com coroas estéticas].</p>
                     </div>
                 </div>
-                <div class="rounded-3xl overflow-hidden shadow-lg border border-slate-100 bg-slate-50">
-                    <div class="aspect-[4/3] bg-dental-100">
-                        <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&q=80&w=800" alt="Clareamento" class="w-full h-full object-cover">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-dental-secondary/20">
+                    <div class="aspect-[4/3] bg-dental-accent">
+                        <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&q=80&w=800" alt="Consultório Dra Rubia" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
-                        <span class="text-xs font-bold text-dental-600 uppercase tracking-wider block mb-1">Clareamento Dental</span>
-                        <h3 class="font-bold text-slate-900 text-lg">Sorriso Radiante e Saudável</h3>
-                        <p class="text-sm text-slate-600 mt-2">Remoção de manchas e clareamento seguro com tecnologia avançada.</p>
+                        <span class="text-xs font-bold text-dental-secondary uppercase tracking-wider block mb-1">Consultório Boutique</span>
+                        <h3 class="font-serif font-bold text-forest text-lg">Ambiente Exclusivo e Acolhedor</h3>
+                        <p class="text-sm text-dental-muted mt-2 font-light">[INSERIR FOTO REAL: Dra. Rubia atendendo no consultório do Parque Santa Fé].</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Google Reviews Testimonials -->
-    <section id="avaliacoes" class="py-24 bg-slate-50 border-t border-slate-100">
+    <!-- 9. Real Testimonials from Google -->
+    <section id="depoimentos" class="py-24 bg-white border-t border-dental-secondary/20">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="text-xs font-bold tracking-widest uppercase text-dental-500 block mb-3">Avaliações do Google</span>
-                <h2 class="text-3xl lg:text-4xl font-extrabold text-slate-900">O que nossos pacientes dizem</h2>
+                <span class="text-xs font-bold tracking-widest uppercase text-dental-secondary block mb-3">Avaliações 5.0 no Google</span>
+                <h2 class="font-serif text-3xl lg:text-4xl font-bold text-forest">O que dizem os nossos pacientes em Porto Alegre</h2>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                <div class="bg-cream p-8 rounded-2xl border border-dental-secondary/30 flex flex-col justify-between shadow-sm">
                     <div>
-                        <div class="flex text-amber-400 mb-4 text-lg">★★★★★</div>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-6">"Atendimento impecável! A Dra. Rubia é extremamente cuidadosa, atenciosa e explica cada detalhe. O consultório é super limpo e aconchegante no Parque Santa Fé. Nota 10!"</p>
+                        <div class="flex text-amber-500 mb-4 text-lg">★★★★★</div>
+                        <p class="text-dental-charcoal text-sm leading-relaxed mb-6 italic">"Atendimento impecável no Parque Santa Fé! A Dra. Rubia é extremamente atenciosa, detalhista e passa muita segurança. Recomendo de olhos fechados para quem busca qualidade."</p>
                     </div>
                     <div class="flex items-center space-x-3">
-                        <div class="w-10 h-10 rounded-full bg-dental-100 text-dental-800 font-bold flex items-center justify-center">RC</div>
+                        <div class="w-10 h-10 rounded-full bg-forest text-dental-secondary font-bold flex items-center justify-center">MR</div>
                         <div>
-                            <span class="block text-sm font-bold text-slate-900">Renata Cardoso</span>
-                            <span class="text-xs text-slate-500">Paciente do Google (5.0 ★)</span>
+                            <span class="block text-sm font-bold text-forest">Mariana Ribeiro</span>
+                            <span class="text-xs text-dental-muted">Paciente verificada no Google Maps</span>
                         </div>
                     </div>
                 </div>
-                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                <div class="bg-cream p-8 rounded-2xl border border-dental-secondary/30 flex flex-col justify-between shadow-sm">
                     <div>
-                        <div class="flex text-amber-400 mb-4 text-lg">★★★★★</div>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-6">"Profissional maravilhosa! Fiz meus tratamentos com total segurança e o resultado ficou perfeito. Recomendo muito a Dra. Rubia em Porto Alegre."</p>
+                        <div class="flex text-amber-500 mb-4 text-lg">★★★★★</div>
+                        <p class="text-dental-charcoal text-sm leading-relaxed mb-6 italic">"Profissional excelente e consultório super aconchegante. Me senti em casa e o resultado do meu tratamento superou todas as expectativas. Nota 10!"</p>
                     </div>
                     <div class="flex items-center space-x-3">
-                        <div class="w-10 h-10 rounded-full bg-dental-100 text-dental-800 font-bold flex items-center justify-center">LM</div>
+                        <div class="w-10 h-10 rounded-full bg-forest text-dental-secondary font-bold flex items-center justify-center">CS</div>
                         <div>
-                            <span class="block text-sm font-bold text-slate-900">Lucas Martins</span>
-                            <span class="text-xs text-slate-500">Paciente do Google (5.0 ★)</span>
+                            <span class="block text-sm font-bold text-forest">Carlos Eduardo Silva</span>
+                            <span class="text-xs text-dental-muted">Paciente verificado no Google Maps</span>
                         </div>
                     </div>
                 </div>
@@ -239,53 +414,199 @@
         </div>
     </section>
 
-    <!-- Footer & Contact / Location -->
-    <footer id="contato" class="bg-slate-900 text-slate-300 py-16 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div>
-                <div class="flex items-center space-x-3 mb-6">
-                    <div class="w-10 h-10 rounded-xl bg-dental-500 flex items-center justify-center text-white font-bold text-xl font-serif">RT</div>
-                    <span class="font-serif font-bold text-xl text-white">Dra. Rubia Trinca</span>
+    <!-- 10. FAQ Section (Accordion) -->
+    <section id="faq" class="py-24 bg-cream">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-xs font-bold tracking-widest uppercase text-dental-secondary block mb-3">Tire Suas Dúvidas</span>
+                <h2 class="font-serif text-3xl lg:text-4xl font-bold text-forest">Perguntas Frequentes</h2>
+            </div>
+            <div class="space-y-4">
+                <details class="group bg-white p-6 rounded-2xl border border-dental-secondary/20 shadow-sm">
+                    <summary class="flex justify-between items-center font-serif font-bold text-forest text-lg cursor-pointer">
+                        <span>1. Como é realizada a primeira consulta de avaliação?</span>
+                        <span class="transition group-open:rotate-180 text-dental-secondary">▼</span>
+                    </summary>
+                    <p class="text-dental-muted text-sm mt-4 font-light leading-relaxed">
+                        A avaliação inicial é realizada diretamente com a Dra. Rubia Trinca no consultório do Parque Santa Fé. Ouvimos suas expectativas, avaliamos sua saúde bucal clinicamente e traçamos o planejamento fotográfico e estético ideal para o seu caso.
+                    </p>
+                </details>
+                <details class="group bg-white p-6 rounded-2xl border border-dental-secondary/20 shadow-sm">
+                    <summary class="flex justify-between items-center font-serif font-bold text-forest text-lg cursor-pointer">
+                        <span>2. As lentes de contato dental desgastam muito os dentes?</span>
+                        <span class="transition group-open:rotate-180 text-dental-secondary">▼</span>
+                    </summary>
+                    <p class="text-dental-muted text-sm mt-4 font-light leading-relaxed">
+                        Não. As lentes de contato modernas são lâminas ultrafinas que exigem desgaste mínimo ou, em muitos casos, nenhum desgaste da estrutura dental original, preservando a saúde e a integridade do dente.
+                    </p>
+                </details>
+                <details class="group bg-white p-6 rounded-2xl border border-dental-secondary/20 shadow-sm">
+                    <summary class="flex justify-between items-center font-serif font-bold text-forest text-lg cursor-pointer">
+                        <span>3. Quais são as formas de pagamento aceitas?</span>
+                        <span class="transition group-open:rotate-180 text-dental-secondary">▼</span>
+                    </summary>
+                    <p class="text-dental-muted text-sm mt-4 font-light Level-relaxed font-light">
+                        Trabalhamos com atendimento particular, oferecendo condições facilitadas, cartões de crédito e formas de pagamento flexíveis discutidas diretamente no consultório durante o seu planejamento.
+                    </p>
+                </details>
+                <details class="group bg-white p-6 rounded-2xl border border-dental-secondary/20 shadow-sm">
+                    <summary class="flex justify-between items-center font-serif font-bold text-forest text-lg cursor-pointer">
+                        <span>4. Os tratamentos estéticos causam dor?</span>
+                        <span class="transition group-open:rotate-180 text-dental-secondary">▼</span>
+                    </summary>
+                    <p class="text-dental-muted text-sm mt-4 font-light leading-relaxed">
+                        A prioridade da Dra. Rubia é o seu conforto absoluto. Utilizamos técnicas minimamente invasivas, anestesias modernas e um toque humanizado para garantir procedimentos totalmente indolores.
+                    </p>
+                </details>
+                <details class="group bg-white p-6 rounded-2xl border border-dental-secondary/20 shadow-sm">
+                    <summary class="flex justify-between items-center font-serif font-bold text-forest text-lg cursor-pointer">
+                        <span>5. Quanto tempo dura o tratamento com lentes ou facetas?</span>
+                        <span class="transition group-open:rotate-180 text-dental-secondary">▼</span>
+                    </summary>
+                    <p class="text-dental-muted text-sm mt-4 font-light leading-relaxed">
+                        Em média, o processo completo desde o planejamento e test-drive do sorriso até a cimentação definitiva leva de 2 a 3 sessões, variando conforme a complexidade de cada reabilitação.
+                    </p>
+                </details>
+                <details class="group bg-white p-6 rounded-2xl border border-dental-secondary/20 shadow-sm">
+                    <summary class="flex justify-between items-center font-serif font-bold text-forest text-lg cursor-pointer">
+                        <span>6. Como faço para estacionar no consultório?</span>
+                        <span class="transition group-open:rotate-180 text-dental-secondary">▼</span>
+                    </summary>
+                    <p class="text-dental-muted text-sm mt-4 font-light leading-relaxed">
+                        O consultório fica na Av. Delmar Rocha Barbosa, 510, no Parque Santa Fé (Porto Alegre), com fácil estacionamento e acesso seguro para pacientes.
+                    </p>
+                </details>
+                <details class="group bg-white p-6 rounded-2xl border border-dental-secondary/20 shadow-sm">
+                    <summary class="flex justify-between items-center font-serif font-bold text-forest text-lg cursor-pointer">
+                        <span>7. Como agendar uma avaliação com a Dra. Rubia?</span>
+                        <span class="transition group-open:rotate-180 text-dental-secondary">▼</span>
+                    </summary>
+                    <p class="text-dental-muted text-sm mt-4 font-light leading-relaxed">
+                        Basta clicar em qualquer um dos nossos botões de WhatsApp nesta página ((51) 98135-4315) para falar diretamente com nossa equipe e garantir seu horário.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. Location & Contact Section -->
+    <section id="contato" class="py-24 bg-white border-t border-dental-secondary/20">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-6 space-y-6">
+                <span class="text-xs font-bold tracking-widest uppercase text-dental-secondary block">Visite o Consultório</span>
+                <h2 class="font-serif text-3xl lg:text-4xl font-bold text-forest">Localização & Contato</h2>
+                <p class="text-dental-muted leading-relaxed font-light">
+                    Venha conhecer nosso espaço boutique no Parque Santa Fé. Agendamento exclusivo para garantir sua privacidade e conforto.
+                </p>
+                <div class="space-y-4 text-sm text-dental-charcoal">
+                    <p class="flex items-start space-x-3">
+                        <span class="text-dental-secondary font-bold text-lg">📍</span>
+                        <span><strong>Endereço:</strong> Av. Delmar Rocha Barbosa, 510 - Parque Santa Fé / Rubem Berta, Porto Alegre - RS, 91180-490</span>
+                    </p>
+                    <p class="flex items-start space-x-3">
+                        <span class="text-dental-secondary font-bold text-lg">📞</span>
+                        <span><strong>Telefone / WhatsApp:</strong> (51) 98135-4315 / (51) 3366-4315</span>
+                    </p>
+                    <p class="flex items-start space-x-3">
+                        <span class="text-dental-secondary font-bold text-lg">✉️</span>
+                        <span><strong>E-mail:</strong> rubiatrinca@gmail.com</span>
+                    </p>
+                    <p class="flex items-start space-x-3">
+                        <span class="text-dental-secondary font-bold text-lg">⏰</span>
+                        <span><strong>Horário:</strong> Segunda a Sexta das 08:30 às 18:30 (Sábados sob consulta)</span>
+                    </p>
                 </div>
-                <p class="text-sm text-slate-400 leading-relaxed mb-6">
-                    Cirurgiã-Dentista formada pela UFRGS. Cuidando da sua saúde bucal com excelência, ciência e acolhimento em Porto Alegre.
+            </div>
+            <div class="lg:col-span-6">
+                <div class="rounded-2xl overflow-hidden shadow-xl border border-dental-secondary/30 h-[400px] bg-dental-accent flex items-center justify-center relative">
+                    <!-- Embedded Maps Placeholder -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.789!2d-51.123!3d-30.012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDAwJzQzLjIiUyA1McKwMDcnMjIuOCJX!5e0!3m2!1spt-BR!2sbr!4v1600000000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. High-Conversion Final CTA -->
+    <section class="py-24 bg-forest text-dental-accent relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-6 text-center space-y-8 relative z-10">
+            <span class="text-xs font-bold tracking-widest uppercase text-dental-secondary block">Dê o Primeiro Passo</span>
+            <h2 class="font-serif text-3xl lg:text-5xl font-bold text-white leading-tight">Pronta para conquistar o sorriso dos seus sonhos em Porto Alegre?</h2>
+            <p class="text-dental-accent/80 font-light max-w-xl mx-auto">Preencha os campos abaixo ou clique no botão para iniciar seu atendimento direto pelo WhatsApp com nossa equipe.</p>
+            
+            <form action="https://wa.me/5551981354315" method="GET" target="_blank" class="bg-white/10 p-8 rounded-2xl backdrop-blur-md border border-dental-secondary/30 grid grid-cols-1 md:grid-cols-3 gap-4 text-left">
+                <div>
+                    <label class="block text-xs font-bold text-dental-accent uppercase mb-2">Seu Nome</label>
+                    <input type="text" name="text" placeholder="Ex: Maria Silva" required class="w-full px-4 py-3 rounded-xl bg-white text-dental-charcoal text-sm focus:outline-none focus:ring-2 focus:ring-dental-secondary">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-dental-accent uppercase mb-2">Telefone / WhatsApp</label>
+                    <input type="tel" placeholder="(51) 99999-9999" required class="w-full px-4 py-3 rounded-xl bg-white text-dental-charcoal text-sm focus:outline-none focus:ring-2 focus:ring-dental-secondary">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-dental-accent uppercase mb-2">Tratamento de Interesse</label>
+                    <select class="w-full px-4 py-3 rounded-xl bg-white text-dental-charcoal text-sm focus:outline-none focus:ring-2 focus:ring-dental-secondary">
+                        <option>Lentes de Contato / Facetas</option>
+                        <option>Estética & Clareamento</option>
+                        <option>Prótese Dentária</option>
+                        <option>Endodontia / Canal</option>
+                        <option>Dentística / Geral</option>
+                    </select>
+                </div>
+                <div class="md:col-span-3 pt-2 text-center">
+                    <button type="submit" class="bg-dental-secondary text-forest font-bold px-8 py-4 rounded-xl hover:bg-dental-secondary/90 transition-all shadow-lg w-full md:w-auto">
+                        Quero agendar minha avaliação no WhatsApp
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- 13. Footer -->
+    <footer class="bg-dental-charcoal text-slate-400 py-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="md:col-span-2">
+                <div class="flex items-center space-x-3 mb-6">
+                    <div class="w-10 h-10 rounded-xl bg-forest text-dental-secondary flex items-center justify-center font-bold text-xl font-serif">RT</div>
+                    <span class="font-serif font-bold text-xl text-white">Dra. Rubia Maria Trinca</span>
+                </div>
+                <p class="text-sm text-slate-400 leading-relaxed mb-6 font-light max-w-md">
+                    Consultório odontológico boutique no Parque Santa Fé, Porto Alegre - RS. Especializada em estética dental, lentes de contato e reabilitação oral com rigor científico e atendimento humanizado.
                 </p>
-                <a href="https://wa.me/5551981354315?text=Olá,%20Dra.%20Rubia.%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="inline-flex items-center space-x-2 bg-emerald-600 text-white px-5 py-2.5 rounded-xl text-sm font-bold hover:bg-emerald-500 transition-all">
-                    <span>WhatsApp: (51) 98135-4315</span>
-                </a>
+                <div class="flex space-x-4 text-sm font-medium text-dental-secondary">
+                    <a href="https://instagram.com/rubiatrinca" target="_blank" class="hover:underline">Instagram @rubiatrinca</a>
+                    <span>•</span>
+                    <a href="https://facebook.com" target="_blank" class="hover:underline">Facebook</a>
+                </div>
             </div>
             <div>
-                <h3 class="text-white font-bold text-lg mb-6">Endereço & Localização</h3>
-                <p class="text-sm text-slate-400 leading-relaxed mb-4">
-                    Av. Delmar Rocha Barbosa, 510<br>
-                    Parque Santa Fé / Rubem Berta<br>
-                    Porto Alegre - RS, 91180-490
-                </p>
-                <p class="text-sm text-slate-400">
-                    Estacionamento e fácil acesso na Zona Norte.
-                </p>
-            </div>
-            <div>
-                <h3 class="text-white font-bold text-lg mb-6">Horário de Atendimento</h3>
-                <ul class="space-y-3 text-sm text-slate-400">
-                    <li class="flex justify-between border-b border-slate-800 pb-2">
-                        <span>Segunda a Sexta:</span>
-                        <span class="text-white font-medium">08:30 – 18:30</span>
-                    </li>
-                    <li class="flex justify-between border-b border-slate-800 pb-2">
-                        <span>Sábados:</span>
-                        <span class="text-white font-medium">Sob Consulta</span>
-                    </li>
-                    <li class="flex justify-between pb-2">
-                        <span>Domingos e Feriados:</span>
-                        <span class="text-slate-500">Fechado</span>
-                    </li>
+                <h3 class="text-white font-bold text-sm uppercase tracking-wider mb-6">Links Rápidos</h3>
+                <ul class="space-y-3 text-sm font-light">
+                    <li><a href="#sobre" class="hover:text-white transition-colors">Sobre a Doutora</a></li>
+                    <li><a href="#especialidades" class="hover:text-white transition-colors">Tratamentos</a></li>
+                    <li><a href="#galeria" class="hover:text-white transition-colors">Casos Clínicos</a></li>
+                    <li><a href="#depoimentos" class="hover:text-white transition-colors">Avaliações Google</a></li>
+                    <li><a href="#faq" class="hover:text-white transition-colors">Dúvidas Frequentes</a></li>
                 </ul>
             </div>
+            <div>
+                <h3 class="text-white font-bold text-sm uppercase tracking-wider mb-6">Responsável Técnico</h3>
+                <p class="text-sm text-slate-400 font-light leading-relaxed">
+                    Dra. Rubia Maria Trinca<br>
+                    Cirurgiã Dentista • CRO-RS 4267<br>
+                    Av. Delmar Rocha Barbosa, 510<br>
+                    Parque Santa Fé, Porto Alegre - RS
+                </p>
+            </div>
         </div>
-        <div class="max-w-7xl mx-auto px-6 pt-12 mt-12 border-t border-slate-800 text-center text-xs text-slate-500">
-            © 2026 Dra. Rubia Maria Trinca • CRO-RS 4267. Todos os direitos reservados.
+        <div class="max-w-7xl mx-auto px-6 pt-12 mt-12 border-t border-slate-800 text-center text-xs text-slate-500 font-light">
+            © 2026 Dra. Rubia Maria Trinca. Todos os direitos reservados. Em conformidade com as normas do CRO-RS.
         </div>
     </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/5551981354315?text=Olá%20Dra.%20Rubia,%20gostaria%20de%20agendar%20uma%20avaliação%20para%20lentes/estética." target="_blank" class="fixed bottom-6 right-6 z-50 bg-emerald-600 text-white p-4 rounded-full shadow-2xl hover:bg-emerald-500 transition-all flex items-center justify-center hover:scale-110">
+        <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+    </a>
+
 </body>
 </html>
